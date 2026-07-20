@@ -1031,3 +1031,6 @@ INSERT INTO `npc_vendor` (`entry`, `item`) VALUES
 (@Entry+45, 3604), -- Bandolier of the Night Watch
 (@Entry+45, 3605), -- Quiver of the Night Watch
 (@Entry+45, 22243); -- Small Soul Pouch
+
+
+INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (9000000, 'zhCN', '加布里埃拉', '综合助手', 0);
