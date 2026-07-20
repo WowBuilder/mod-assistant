@@ -1032,5 +1032,5 @@ INSERT INTO `npc_vendor` (`entry`, `item`) VALUES
 (@Entry+45, 3605), -- Quiver of the Night Watch
 (@Entry+45, 22243); -- Small Soul Pouch
 
-
-INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (9000000, 'zhCN', '加布里埃拉', '综合助手', 0);
+DELETE FROM `creature_template_locale` WHERE `entry` = @Entry AND `locale` = 'zhCN'; 
+INSERT INTO `creature_template_locale` (`entry`,`locale`,`Name`,`Title`,`VerifiedBuild`) values (@Entry, 'zhCN', '加布里埃拉', '综合助手', 0);
