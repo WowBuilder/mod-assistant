@@ -21,6 +21,8 @@ INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`,
 (@Entry, 0, @Model, 1, 1);
 
 DELETE FROM `creature` WHERE `id`=@Entry;
+
+/*
 INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES
 (@Entry, 0, -8824.65, 649.467, 94.5585, 4.47955), -- Stormwind City
 (@Entry, 0, -4956.91, -932.369, 501.66, 4.77523), -- City of Ironforge
@@ -32,6 +34,20 @@ INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `
 (@Entry, 530, 9469.83, -7294.44, 14.3078, 0.105431), -- Silvermoon City
 (@Entry, 530, -1814.49, 5425.97, -12.4281, 2.87456), -- Shattrath City
 (@Entry, 571, 5791.71, 560.464, 650.657, 1.79314); -- Dalaran
+*/
+
+-- 修改了NPC所在坐标
+INSERT INTO `creature` (`id`, `map`, `position_x`, `position_y`, `position_z`, `orientation`) VALUES
+(@Entry, 0, -8947.934, -123.76209, 83.28293, 6.076175), -- 人类
+(@Entry, 0, -6223.464, 342.57635, 383.27356, 4.49752), -- 矮人 / 侏儒
+(@Entry, 530, -3970.564, -13927.279, 100.187386, 5.837874), -- 德莱尼
+(@Entry, 1, 10328.234, 840.30383, 1326.2626, 4.1672726), -- 暗夜精灵
+(@Entry, 1, -604.6934, -4262.865, 38.95613, 1.465518), -- 兽人 / 巨魔
+(@Entry, 1, -2913.7295, -250.18636, 52.985516, 3.5201669), -- 牛头人
+(@Entry, 0, 1664.4504, 1678.1382, 120.53072, 0.0402088), -- 亡灵
+(@Entry, 530, 10342.422, -6360.92, 33.51422, 1.4393603), -- 血精灵
+(@Entry, 609, 2370.9333, -5653.1006, 426.12796, 3.6610742), -- 死亡骑士
+(@Entry, 1, 16201.989, 16256.408, 21.225111, 0.11852807); -- GM岛
 
 /*
 -- Major Glyphs
